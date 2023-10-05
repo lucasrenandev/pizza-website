@@ -1,0 +1,119 @@
+/* ===== Home section ===== */
+.home {
+    padding: 0;
+}
+
+.home-slider .slide {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-slider .slide:nth-child(1) {
+    background-image: url("../images/slider-1.jpg");
+    background-repeat: no-repeat;
+}
+
+.home-slider .slide:nth-child(2) {
+    background-image: url("../images/slider-2.jpg");
+    background-repeat: no-repeat;
+}
+
+.home-slider .slide:nth-child(3) {
+    background-image: url("../images/slider-3.jpg");
+    background-repeat: no-repeat;
+}
+
+.home-slider .slide .content {
+    width: 60rem;
+    text-align: center;
+    display: none;
+    animation: sliderReveal 1s ease forwards;
+}
+
+.home-slider .slide .content h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    text-transform: capitalize;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    @media (max-width: 768px) {
+        font-size: 4rem;
+    }
+    @media (max-width: 450px) {
+        font-size: 3rem;
+    }
+}
+
+.home-slider .slide .content h1 span {
+    color: var(--primary-color);
+}
+
+.home-slider .slide .content .btn {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+}
+
+.home-slider .swiper-slide-active .content {
+    display: inline-block;
+}
+
+.home-slider .swiper-slide-active {
+    animation: smoothScale 4s linear forwards;
+}
+
+@keyframes sliderReveal {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes smoothScale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+.home-slider .swiper-button-next,
+.home-slider .swiper-button-prev {
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    border: 0.1rem solid var(--primary-color);
+    transform: rotate(45deg);
+    color: var(--primary-color);
+    transition: all 0.35s ease;
+}
+
+.home-slider .swiper-button-next {
+    margin-right: 1.5rem;
+}
+
+.home-slider .swiper-button-prev {
+    margin-left: 1.5rem;
+}
+
+.home-slider .swiper-button-next::after,
+.home-slider .swiper-button-prev::after {
+    transform: rotate(-45deg);
+    font-size: 1.5rem;
+}
+
+.home-slider .swiper-button-next:hover,
+.home-slider .swiper-button-prev:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}

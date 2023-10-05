@@ -1,0 +1,49 @@
+/* ===== Pizzas section ===== */
+.pizzas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.pizzas-container .pizza-box h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.pizzas-container .pizza-box p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.8;
+    padding: 0 1rem;
+}
+
+.pizzas-container .pizza-box .stars {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.pizzas-container .pizza-box .stars i {
+    font-size: 1.7rem;
+    color: #ffd700;
+}
+
+.pizzas-container .pizza-box .price {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.pizzas-container .pizza-box .price span {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: line-through;
+}

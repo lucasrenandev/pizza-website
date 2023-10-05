@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------------------Css links------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!---------------------------Header------------------------------->
+    <header class="header">
+        <a href="home.html" class="logo">
+            <i class="fa fa-pizza-slice"></i>
+            Pizza
+        </a><!--end logo-->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/menu.html">Menu</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul><!--end nav list-->
+        </nav><!--end navbar-->
+        <div class="h-icons">
+            <div class="fa fa-shopping-cart" id="cart"></div>
+            <div class="fa fa-user" id="user"></div>
+            <div class="fa fa-bars" id="menu-icon"></div>
+        </div><!--end h icons-->
+        <div class="shopping-container">
+            <figure class="box">
+                <div class="image">
+                    <img src="assets/images/pizza-1.png" alt="Pizza">
+                    <div class="price">
+                        <h3>Pizza</h3>
+                        <span>1 X & 18.99</span>
+                    </div>
+                    <i class="fa fa-times"></i>
+                </div><!--end image-->
+            </figure><!--end box-->
+            <figure class="box">
+                <div class="image">
+                    <img src="assets/images/pizza-2.png" alt="Pizza">
+                    <div class="price">
+                        <h3>Pizza</h3>
+                        <span>1 X & 18.99</span>
+                    </div>
+                    <i class="fa fa-times"></i>
+                </div><!--end image-->
+            </figure><!--end box-->
+            <figure class="box">
+                <div class="image">
+                    <img src="assets/images/pizza-3.png" alt="Pizza">
+                    <div class="price">
+                        <h3>Pizza</h3>
+                        <span>1 X & 18.99</span>
+                    </div>
+                    <i class="fa fa-times"></i>
+                </div><!--end image-->
+            </figure><!--end box-->
+            <h3 class="total">Total: $56.97</h3>
+            <a href="#" class="btn">Checkout cart</a>
+        </div><!--end shopping container-->
+        <form action="#" class="form">
+            <h3>Login form</h3>
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Enter your email" required>
+            </div><!--end input field-->
+            <div class="input-field">
+                <input type="password" class="input" placeholder="Enter your password" required>
+            </div><!--end input field-->
+            <div class="remember-field">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember-me</label>
+            </div><!--end remember field-->
+            <input type="submit" class="btn" value="Login">
+        </form><!--end form-->
+    </header><!--end header-->
+    
+    <!---------------------------Home section------------------------------->
+    <section class="home">  
+        <main class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <h1>The <span>tastiest</span> pizza <br> on the planet</h1>
+                        <a href="#" class="btn">Order now</a>
+                    </div><!--end content-->
+                </div><!--end swiper slide-->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <h1>The <span>tastiest</span> pizza <br> on the planet</h1>
+                        <a href="#" class="btn">Order now</a>
+                    </div><!--end content-->
+                </div><!--end swiper slide-->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <h1>The <span>tastiest</span> pizza <br> on the planet</h1>
+                        <a href="#" class="btn">Order now</a>
+                    </div><!--end content-->
+                </div><!--end swiper slide-->
+            </div><!--end swiper wrapper-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </main><!--end swiper-->
+    </section><!--end home section-->
+
+    <!---------------------------Banner section------------------------------->
+    <section class="banner">
+        <main class="banner-container">
+            <div class="banner-box">
+                <figure class="image">
+                    <img src="assets/images/banner-1.jpg" alt="Banner 1">
+                    <div class="content">
+                        <h3>Pizza</h3>
+                    </div><!--end content-->
+                </figure><!--end image-->
+            </div><!--end banner box-->
+            <div class="banner-box">
+                <figure class="image">
+                    <img src="assets/images/banner-2.jpg" alt="Banner 2">
+                    <div class="content">
+                        <h3>Dessert</h3>
+                    </div><!--end content-->
+                </figure><!--end image-->
+            </div><!--end banner box-->
+            <div class="banner-box">
+                <figure class="image">
+                    <img src="assets/images/banner-3.jpg" alt="Banner 3">
+                    <div class="content">
+                        <h3>Pasta</h3>
+                    </div><!--end content-->
+                </figure><!--end image-->
+            </div><!--end banner box-->
+            <div class="banner-box">
+                <figure class="image">
+                    <img src="assets/images/banner-4.jpg" alt="Banner 4">
+                    <div class="content">
+                        <h3>Wines</h3>
+                    </div><!--end content-->
+                </figure><!--end image-->
+            </div><!--end banner box-->
+        </main><!--end banner container-->
+    </section><!--end banner-->
+
+    <!---------------------------Steps section------------------------------->
+    <section class="steps">
+        <header class="title">
+            <h2>How it <span>works</span></h2>
+        </header><!--end title-->
+        <main class="steps-container">
+            <div class="steps-box">
+                <figure class="image">
+                    <img src="assets/images/work-1.gif" alt="Work 1">
+                </figure><!--end image-->
+                <h3>Choose your favorite food</h3>
+            </div><!--end steps box-->
+            <div class="steps-box">
+                <figure class="image">
+                    <img src="assets/images/work-2.gif" alt="Work 2">
+                </figure><!--end image-->
+                <h3>Free and fast delivery</h3>
+            </div><!--end steps box-->
+            <div class="steps-box">
+                <figure class="image">
+                    <img src="assets/images/work-3.gif" alt="Work 3">
+                </figure><!--end image-->
+                <h3>Easy payments methods</h3>
+            </div><!--end steps box-->
+            <div class="steps-box">
+                <figure class="image">
+                    <img src="assets/images/work-4.gif" alt="Work 4">
+                </figure><!--end image-->
+                <h3>And finally, enjoy your food</h3>
+            </div><!--end steps box-->
+        </main><!--end steps container-->
+    </section><!--end steps section-->
+
+    <!---------------------------Pizzas section------------------------------->
+    <section class="pizzas">
+        <header class="title">
+            <h2>Pizzas of the <span>month</span></h2>
+        </header><!--end title-->
+        <main class="pizzas-container">
+            <div class="pizza-box">
+                <img src="assets/images/pizza-1.png" alt="Pizza 1">
+                <h3>Margarita</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laboriosam.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div><!--end stars-->
+                <h4 class="price">$15.99 <span>$20.99</span></h4>
+                <a href="#" class="btn">Add to cart</a>
+            </div><!--end pizza box-->
+            <div class="pizza-box">
+                <img src="assets/images/pizza-2.png" alt="Pizza 2">
+                <h3>Margarita</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laboriosam.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div><!--end stars-->
+                <h4 class="price">$15.99 <span>$20.99</span></h4>
+                <a href="#" class="btn">Add to cart</a>
+            </div><!--end pizza box-->
+            <div class="pizza-box">
+                <img src="assets/images/pizza-3.png" alt="Pizza 3">
+                <h3>Margarita</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laboriosam.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div><!--end stars-->
+                <h4 class="price">$15.99 <span>$20.99</span></h4>
+                <a href="#" class="btn">Add to cart</a>
+            </div><!--end pizza box-->
+        </main><!--end pizzas container-->
+    </section><!--end pizzas section-->
+
+    <!---------------------------Footer------------------------------->
+    <footer class="footer">
+        <main class="footer-container">
+            <div class="footer-box">
+                <h4>Find us here</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, suscipit!</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div><!--end social icons-->
+            </div><!--end footer box-->
+            <div class="footer-box">
+                <h4>Contact us</h4>
+                <p>+123-456-7890</p>
+                <a href="#" class="email">ninjashub@gmail.com</a>
+            </div><!--end footer box-->
+            <div class="footer-box">
+                <h4>Localization</h4>
+                <p>230 Points of pines dr</p>
+                <p>Colorado springs united states</p>
+            </div><!--end footer box-->
+        </main><!--end footer container-->
+        <div class="credit">
+            <p>Created by <span>NinjasHub</span> | All rights reserved!</p>
+        </div><!--end credit-->
+    </footer><!--end footer-->
+
+    <!---------------------------JavaScript links------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

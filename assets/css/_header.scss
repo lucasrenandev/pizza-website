@@ -1,0 +1,227 @@
+/* ===== Header ===== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    @media (max-width: 991px) {
+        padding: 2rem;
+    }
+    .navbar {
+        @media (max-width: 768px) {
+            position: absolute;
+            top: 110%;
+            right: -110%;
+            width: 28rem;
+            height: auto;
+            padding: 1.8rem 2.5rem 0;
+            background-color: var(--bg-color);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            transition: right 0.35s ease;
+            &.active {
+                right: 2rem;
+            }
+        }
+    }
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.header .logo i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.header .nav-list {
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.header .nav-list li  {
+    margin: 0 1rem;
+    @media (max-width: 768px) {
+        margin: 0;
+    }
+}
+
+.header .nav-list li a {
+    font-size: 1.7rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+    transition: color 0.35s ease;
+    &:hover {
+        color: var(--primary-color);
+    }
+    @media (max-width: 768px) {
+        display: block;
+        margin-bottom: 1.8rem;
+        font-size: 2rem;
+    }
+}
+
+.header .h-icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header .h-icons div {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: color 0.35s ease;
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.header .h-icons #menu-icon {
+    z-index: 1010;
+    display: none;
+    @media (max-width: 768px) {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.header .shopping-container {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 35rem;
+    height: auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: right 0.35s ease;
+    &.active {
+        right: 2rem;
+    }
+}
+
+.header .shopping-container .box .image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .shopping-container .box .image img {
+    width: 100px;
+    height: auto;
+}
+
+.header .shopping-container .box .image .price h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.header .shopping-container .box .image .price span {
+    color: var(--other-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.header .shopping-container .box .image i {
+    position: absolute;
+    right: 2rem;
+    color: var(--other-color);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.35s ease;
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.header .shopping-container .total {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.header .shopping-container .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 3rem;
+}
+
+.header .form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 35rem;
+    height: auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: right 0.35s ease;
+    &.active {
+        right: 2rem;
+    }
+}
+
+.header .form h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+.header .form .input-field .input {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.header .form .remember-field {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.header .form .remember-field label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--other-color);
+}
+
+.header .form .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 3rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
